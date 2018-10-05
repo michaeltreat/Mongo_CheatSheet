@@ -24,7 +24,7 @@ If you've never used the Mongo shell before, then I recommend skimming through t
 The Mongo Shell reference can be found [here](https://docs.mongodb.com/manual/reference/method/).
 
 ## Quick Start
-You can execute JavaScript commands in the shell as well. Type these commands into your commandline:
+You can execute JavaScript commands in the shell. Type these commands into your commandline:
 1. `use sampleDB` 
   - This makes a new database called sampleDB. It has no collections yet so it's not actually saved yet, which is why if you type `show dbs` it doesn't show up.
 2. `db.cars.insert( [{make:"Honda", doors:2}, {make:"VW", doors:4}] )`
@@ -40,9 +40,7 @@ This is where it gets fun:
 
 Notice that not only do we see out new Ford in our database, but we also get 3 messages printed out to the shell.
 
----
-
-**Note:** Just because we can use JavaScript in the Shell doesn't mean we can use these same commands in Node.js:
+**Note:** Just because we can use JavaScript in the Shell doesn't mean we can use these same commands in Node.js though:
 
 "JavaScript in MondgoDB: Although these methods use JavaScript, most interactions with MongoDB do not use JavaScript but use an idiomatic driver in the language of the interacting application."
 
