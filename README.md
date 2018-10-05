@@ -36,7 +36,7 @@ This is where it gets fun:
 
 1. `let tempCar = {make: "Ford", doors:3}`
 2. `db.cars.insert(tempCar)`
-3. `db.cars.find({}).forEach(car => print`(`${car.make} has ${car.doors} doors.``))`
+3. ``` db.cars.find({}).forEach(car => print(`${car.make} has ${car.doors} doors.`))```
 
 Notice that not only do we see out new Ford in our database, but we also get 3 messages printed out to the shell.
 
